@@ -19,9 +19,9 @@ def consolidate_cart(cart)
   # change `cart` (i.e. mutate) it. It's easier to return a new thing.
   #find_item_by_name_in_collection(name, cart)
     i = 0 
-    while i < cart.length do |item|
-      if item[i] == item[0..-1]
-        :count = 1 
+    while i < cart.length do
+      if cart[i][:item] == item[0..-1]
+        cart[i][:item] = 1
         i += 1
       end 
     end 
