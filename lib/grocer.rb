@@ -21,7 +21,7 @@ def consolidate_cart(cart)
     i = 0 
     while i < cart.length do |item|
       if item[i] == item[0..-1]
-        [:count] = 1 
+        :count = 1 
         i += 1
       end 
     end 
