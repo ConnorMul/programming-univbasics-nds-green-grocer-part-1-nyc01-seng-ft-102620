@@ -20,7 +20,7 @@ def consolidate_cart(cart)
   #find_item_by_name_in_collection(name, cart)
     i = 0 
     while i < cart.length do
-      if cart[i][:item] == item[0..-1]
+      if cart[i][:item] == cart[0..-1][:item]
         cart[i][:item] = 1
         i += 1
       end 
