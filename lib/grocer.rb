@@ -25,7 +25,7 @@ def consolidate_cart(cart)
       if item
         new_cart_index = 0 
         while new_cart_index < new_cart.length do 
-          
+          if new_cart[new_cart_index][:item]
       end 
     end 
     new_cart
