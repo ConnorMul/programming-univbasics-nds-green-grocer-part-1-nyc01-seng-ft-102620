@@ -4,7 +4,8 @@ def find_item_by_name_in_collection(name, collection)
   # Consult README for inputs and outputs
   collection.each do |items|
     items.each do |item_info|
-      if item_info[]
+      if item_info[:item] == name
+        return items
     end 
   end 
 end
