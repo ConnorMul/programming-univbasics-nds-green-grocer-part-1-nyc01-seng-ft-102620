@@ -33,6 +33,7 @@ def consolidate_cart(cart)
         else 
           count[i][:count] = 1 
           new_cart << cart[i]
+        end
         
         i += 1
       end 
