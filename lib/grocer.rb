@@ -30,7 +30,9 @@ def consolidate_cart(cart)
           end 
           new_cart_index += 1 
         end 
-        count[i]
+        else 
+          count[i][:count] = 1 
+        
         
         i += 1
       end 
