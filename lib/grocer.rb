@@ -9,7 +9,7 @@ def find_item_by_name_in_collection(name, collection)
      nil
     end 
   end 
-  name ? collection[name][:item] : nil
+  name ? collection[name][:items] : nil
 end
 
 def consolidate_cart(cart)
