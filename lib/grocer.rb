@@ -21,9 +21,7 @@ def consolidate_cart(cart)
     i = 0 
     new_cart = []
     while i < cart.length do
-      if cart[i][:item] == cart[0..-1][:item]
-        cart[i][:item] = 1
-        i += 1
+      item = find_item_by_name(cart )
       end 
     end 
     new_cart
